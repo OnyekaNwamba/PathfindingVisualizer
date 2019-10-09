@@ -6,6 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import {Col,Row} from "react-bootstrap";
+import './triangletwo-right.svg';
 
 const START_NODE_ROW = 10;
 const START_NODE_COL = 15;
@@ -110,7 +111,34 @@ export default class PathfindingVisualizer extends Component {
                 <Container >
 
                     <Row>
-                        <img></img>
+                        <ul>
+                            <li>
+                                <div className="start">
+                                    StartNode
+                                </div>
+                            </li>
+                            <li>
+                                <div className="target"></div>
+                                Target Node
+                            </li>
+                            <li>
+                                <div className="unvisited"></div>
+                                Unvisited Node
+                            </li>
+                            <li>
+                                <div className="visited"></div>
+                                <div className="visitedobject"></div>
+                                Visited Nodes
+                            </li>
+                            <li>
+                                <div className="shortest-path"></div>
+                                Shortest-path Node
+                            </li>
+                            <li>
+                                <div className="wall"></div>
+                                Wall Node
+                            </li>
+                        </ul>
                     </Row>
 
                     <Row>
