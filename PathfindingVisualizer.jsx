@@ -108,9 +108,22 @@ export default class PathfindingVisualizer extends Component {
                     </Navbar.Collapse>
                 </Navbar>
 
-                <Container >
+                <Container>
 
                     <Row>
+                        <Navbar bg="light" variant="light" expand="lg">
+                            <Navbar.Collapse id="basic-navbar-nav">
+                                <Nav className="mr-auto">
+                                    <Nav className={'start-space'}>
+                                        <div className={'start'}>StartNode</div>
+                                    </Nav>
+                                    <Nav className={'target-space'}>
+                                        <div className={'target'}> TargetNode</div>
+                                    </Nav>
+                                </Nav>
+                            </Navbar.Collapse>
+                        </Navbar>
+                        {/*
                         <ul>
                             <li>
                                 <div className="start">
@@ -125,6 +138,10 @@ export default class PathfindingVisualizer extends Component {
                                 <div className="unvisited"></div>
                                 Unvisited Node
                             </li>
+                        </ul>
+                    </Row>
+                    <Row>
+                        <ul>
                             <li>
                                 <div className="visited"></div>
                                 <div className="visitedobject"></div>
@@ -140,7 +157,8 @@ export default class PathfindingVisualizer extends Component {
                             </li>
                         </ul>
                     </Row>
-
+                    */}
+                    </Row>
                     <Row>
                         <Col>
                             <div className="grid" style={{margin: '0 0 0'}}>
